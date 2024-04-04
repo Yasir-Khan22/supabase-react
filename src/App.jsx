@@ -95,7 +95,7 @@ function App() {
         <h3>current database items.</h3>
         <Row xs={1} lg={3} className='g-4'>
           {products.map((product) => (
-            <Col>
+            <Col key={product.id}>
               <ProductCards product={product} />
             </Col>
           ))}
